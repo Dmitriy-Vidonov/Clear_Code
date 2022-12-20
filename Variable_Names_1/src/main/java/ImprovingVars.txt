@@ -1,1 +1,12 @@
-var1 - var2
+1) massivB - inputArray // массив входных данных
+2) count - elementsCounter // счетчик элементов в массиве
+3) arrA1 - inputArray // массив входных данных
+4) indexA - inputArrayIndex // индекс для массива входных значений
+5) spisok_strok - stringList // список строк входных значений
+6) diff - stringsDifference // разница строк
+7) s - encodedString // закодированная строка
+8) s1 - inputString1 // 1-я входная строка
+9) H1 - heightArray1 // высота первого массива
+10) e1 - firstEntry // первое вхождение в массив
+11) s1 - string1 // 1-я строка для сравнения
+12) buff_count - bufferCounter // счетчик для буферного массива
