@@ -1,0 +1,6 @@
+6.1
+1) days - daysOfFullConquest // вместо абстрактных дней - дни до полного захвата области
+2) count - countOfFilledCells // не просто count, а счетчик заполненных ячеек
+3) massivB - templateArray // не некий massivB, а шаблонный массив для сравнения
+4) count - mainArrayElement // не абстрактный счетчик, а элемент главного массива
+5) arrA1 - indexesArray // не некий массив А1, а массив с индексами
