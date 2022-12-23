@@ -1,0 +1,49 @@
+7.1
+1) activeLight - isActiveLight
+2) result - isExist
+3) flag - isAscendingArray
+4) sorted - isSorted
+5) door - doorState
+
+7.2
+1) result - success
+2) res - found
+3) t - found
+4) flag - done
+
+7.3
+1) i - depth // обход директории в глубину, переменная depth вместо i
+2) j - step // переменная step используется для учета шагов алгоритма
+
+7.4
+1) locked / unlocked // для отображения состояния двери
+2) firstIndex / lastIndex // для индексов в начале и в конце массива
+
+7.5
+1) 
+for (int i=index; i < array.length; i++)
+        {
+            T temp = array[i];
+            array[i] = itm;
+            itm = temp;
+        }
+
+вместо temp - varForReplace
+
+2) 
+ public void shrinkSize()
+    {
+        int[] temp;
+        if(size > 0)
+        {
+            temp = new int[size];
+            System.arraycopy(intArray, 0, temp, 0, size);
+            capacity = size;
+            intArray = temp;
+        }
+    }
+    
+вместо temp - bufferArray 
+
+
+
