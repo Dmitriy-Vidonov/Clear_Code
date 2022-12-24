@@ -1,0 +1,12 @@
+1) res - hashFunctionOutput // переменная, хранящая результат работы хэш-функции
+2) result - bitStorageNumber // переменная, выступающая в качестве битового массива
+3) result_list - mergedLists // объединение двух списков
+4) l - i // переменная для счетчика
+5) sum - sumOfTransformedNums // сумма преобразованных чисел
+6) max - maxElement // максимальный элемент последовательности
+7) value - dummyElement // значение - заглушка, тестовое, пример
+8) slots - keysArray // массив со значениями - ключами
+9) index - keysArrIndexbyHashF // индекс в массиве keysArray, полученный из хэш-функции
+10) average - averageNumofClients // среднее число клиентов
+11) testOnes0 - numForTestOnes // число для тестирования метода TestOnes
+12) nameString - westernStyleName // переменная для хранения имени в западном стиле
