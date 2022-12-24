@@ -1,0 +1,12 @@
+1) searchMethod - isStringHasSubstring // не "поисковый метод", а "содержит ли строка подстроку
+2) generator - GenerateStringByLength // не абстрактный генератор, а генератор строки по заданной длине
+3) filesNdirs - getDirsAndFilesList // не "файлы с папками", а "получить список файлов и папок"
+4) generateTemplate - getExcelFileForTests // не "создание шаблона", а "получить эксель файл для тестов"
+5) docxReplace - ReplaceStringsInDocx // не "docx замена", а "замена строк в docx"
+6) copy - copyInputToOutputStream // копирование входного потока в выходной вместо простого "копировать"
+7) contains - isValueInIntArray // вместо "содержится" - "есть ли значение в массиве типа int?"
+8) SumOfThe - HalfOfAllArrayElementsSum // не просто "сумма чего-то", а "половина суммы всех элементов массива
+9) MassVote - DetectVotesWinner // "определить победителя выборов" вместо "массовые выборы"
+10) numToArr - convertIntNumToArray // перевод числа типа int в массив
+11) convert - ConvertIntArrayToNumeralSystem // перевод массива типа int в заданную систему счисления
+12) StrToArr - packStringInTwoDimArray // "упаковка" строки в двумерный массив
