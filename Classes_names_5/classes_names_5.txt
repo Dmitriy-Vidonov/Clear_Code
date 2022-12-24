@@ -1,0 +1,15 @@
+3.1.
+1) createFolder - FolderCreator
+2) Rename - NameChanger
+3) InputPanel - PanelMaker
+4) divideLongByBillion - LongByBillionDivider
+5) throwClassCast - ClassCastDisplay
+
+3.2.
+1) Reader - catReader() // уточнение принадлежности к классу cat
+2) buffReader - catBuffReader // уточнение принадлежности к классу cat
+3) copy - bufferToArchiveCopy // детализация имени метода
+4) retrieveBool - boolElementExtractor // детализация имени метода
+5) retrieveOne - loanDisplay // детализация имени метода
+6) describeContents - FollowersContentCount // именование согласно принадлежности к классу
+7) newArray - FollowersArray // именование согласно принадлежности к классу
