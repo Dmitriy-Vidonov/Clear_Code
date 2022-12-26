@@ -1,0 +1,10 @@
+3.1.
+1) Developer developer = DeveloperFactoryImp.createDeveloper("name", "specialty");
+2) Customer customer = CustomerFactoryImp.addNewCustomer("name", "fammily", order_id);
+3) MObile mobilePhone = PhonesFactory.createPhone("brand_name", item_id, cost);
+
+3.2.
+1) DeveloperFactoryImp
+2) CustomerFactoryImp
+3) PhonesFactory
+
