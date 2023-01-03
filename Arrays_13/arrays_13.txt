@@ -1,0 +1,55 @@
+1) int[] arrC = new int[arrA1.length + arrF1.length];
+        int indexA, indexF;
+        indexA = indexF = 0;
+        for (int i = 0; i < arrC.length; i += 2) {
+            arrC[i] = arrF1[indexF];
+            arrC[i + 1] = arrA1[indexA];
+            indexA++;
+            indexF++;
+        }
+
+вместо массивов можно было бы использовать списки, получая доступ к их элементам последовательно
+
+2)  boolean[] arr = new boolean[k];
+        for (int i = 0; i < k; i++) arr[i] = false;
+
+
+вместо массива здесь подошел бы список
+
+3) public static int[] UFO(int N, int[] data, boolean octal) {
+        int buffer;
+        int divider = (octal) ? 8 : 16;
+
+        for(int i=0; i<N; i++) {
+            buffer = data[i];
+            int[] bufferArr = numToArr(buffer);
+            buffer = convert(bufferArr, divider);
+            data[i] = buffer;
+        }
+        return data;
+    }
+
+здесь так же вместо массива можно воспользоваться списком
+
+4)  int buffer = 0;
+        Map<String, Integer> testMap = new TreeMap<String, Integer>();
+
+        for(int i=0; i<N; i++) {
+            String[] strElement = items[i].split(" ");
+            if(testMap.containsKey(strElement[0])) {
+                buffer = testMap.get(strElement[0]);
+                testMap.put(strElement[0], (Integer.parseInt(strElement[1]) + buffer));
+            } else testMap.put(strElement[0], Integer.parseInt(strElement[1]));
+        }
+
+работу с массивом можно производить последовательно, применив метод for-each
+
+5)  public static String MassVote(int N, int[] Votes) {
+        float maxElem = Votes[0];
+        for(int i=0; i<Votes.length; i++) {
+            if(maxElem < Votes[i]) {
+                maxElem = Votes[i];
+            }
+        }
+
+здесь массив так же можно заменить списком
