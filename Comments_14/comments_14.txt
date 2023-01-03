@@ -1,0 +1,101 @@
+3.1.
+1)    if (x1 + 1 <= mapRows1 - 1 && (map[x1+1][y1] == 0)) { //если координата x ячейки не выступает за пределы
+						            //нижнего уровня map и при этом равна 0, т.е. пустая
+            conquerArr[0] = x1 + 1;
+            conquerArr[1] = y1;
+            counter1++;
+        }	
+
+2) //проставляем начальные точки высадки
+        int count = 0;
+        for(int i=0; i<L; i++) {
+            if(map[battalion[count]-1][battalion[count+1]-1] == 0) { //проверка, что ячейка пустая, т.к. зоны высадки могут повторяться
+                map[battalion[count]-1][battalion[count+1]-1] = 1;
+                countFull++; //прибавление +1 только в случае заполнения ранее пустой ячейки
+            }
+            count+=2;
+        }
+        days++; //добавляем первый день после высадки  = 1
+
+3)  int rows = (int) Math.sqrt(len); //число строк матрицы
+        int cols = (int) Math.ceil(Math.sqrt(len)); //число столбцов матрицы
+        if(rows * cols < len) rows++;
+
+        //рассчет diff только в случае зашифровки boolean encode = true
+        int diff = 0; //дополняем строку пробелами, если она не полностью входит в матрицу
+        if(str.length() < cols*rows){
+            diff = cols*rows-str.length();
+        }
+
+4)  public static void main(String[] args) {
+        HashMap<String, Integer> charsTable = new HashMap<>();
+	// для каждого символа заполняются данные согласно таблице из ТЗ
+        charsTable.put(" ", 0); charsTable.put("&", 24); charsTable.put(",", 7); charsTable.put("2", 22);
+        charsTable.put("8", 23); charsTable.put(">", 10); charsTable.put("D", 26); charsTable.put("J", 18);
+        charsTable.put("P", 23); charsTable.put("V", 19); charsTable.put("\\", 10); charsTable.put("b", 25);
+
+5) //вывод первых двух строк для последующей проверки
+        for(int i=0; i<2; i++) {
+            for(int j=0; j<resArraLen; j++) {
+                System.out.print(resArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+        //вычитание столбиком из большего числа меньшее
+        for(int i=resArraLen-1; i>=0; i--) {
+            if(resArray[0][i] < resArray[1][i]) {
+                resArray[2][i] = resArray[0][i] + 10 - resArray[1][i];
+                resArray[0][i-1] -= 1;
+            } else {
+                resArray[2][i] = resArray[0][i] - resArray[1][i];
+            }
+        }
+
+
+3.2.
+1) float sum = 0;
+        for(int num : arr) sum += num; //sum = 100
+        //2.2) какой % от суммы составляет maxElem?
+        float percentage = ((maxElem / sum) * 100);
+
+здесь можно использовать более наглядное именование переменной - вместо percentage взять maxElementPercentageFromSum
+
+2) //Проверка корректности длины строки
+        if ((chArr.length-1) % (dots + stars) == 0) 
+
+для повышения наглядности можно ввести булевую переменную. Например boolean isStringLengthCorrect и результат вычисления поместить в неё.
+
+
+3) switch(strCommand) {
+            case 1: //код для выполнения команды (1) Добавить(S)
+                String[] command1 = command.split(" "); //разделение входной строки на 2 части
+                if(undoFlag == false) { //false - обычный режим
+                    currenString += command1[1];
+                    undoArray.add(currenString); //добавляем состояние строки в массив Undo()
+                    index++;
+                    break;
+
+для большей наглядности следует использовать смысл команд в названии переменных. Не command1, а commandAdd например
+
+4) 	int H = 3; //число строк
+        int W = 4; //число стобцов
+        String[] tree = {".+..", "..+.", ".+.."}; //массив на вход
+
+        for (int i=0; i<H; i++) {
+            tree[i] = tree[i].replace(".", "0");
+            tree[i] = tree[i].replace("+", "1");
+        }
+
+
+здесь повышения наглядности можно было бы достичь более подробным наименованием переменных. Не H, а Rows, не W, а Columns
+не tree, а resultingTree
+
+5) // Проверяем, является ли значение числовым
+        // Для целочисленных значений
+        if(((v1.getClass().getTypeName().endsWith("Integer")) &&
+                (v2.getClass().getTypeName().endsWith("Integer"))
+        ) && ((int)v1 < (int)v2)
+        ) return -1;  // -1 если v1 < v2
+
+здесь для наглядности можно ввести булеву переменную boolean isInteger, передать в неё результаты вычислений и дальнейшие действия производить с ней.
+
