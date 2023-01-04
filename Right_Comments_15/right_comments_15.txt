@@ -137,23 +137,3 @@ public PowerSet()
         long res = 0;
         int rand = 223;
         long len = str1.length();
-
-
-
-
-  
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
