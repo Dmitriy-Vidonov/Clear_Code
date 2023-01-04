@@ -1,0 +1,159 @@
+1) Информативный комментарий
+
+// Возврат всех найденных по значению узлов в виде списка
+public ArrayList<Node> findAll(int _value) {
+        ArrayList<Node> nodes = new ArrayList<Node>();
+
+        if(this.head == null){
+            return nodes;
+        }
+//последующий код
+
+
+2) Информативный комментарий
+
+// Определение команды добавления в текст
+switch(strCommand) {
+   case 1:
+      String[] command1 = command.split(" ");
+      if(undoFlag == false) {
+          currenString += command1[1];
+          undoArray.add(currenString);
+          index++;
+          break;
+
+
+3) Представление намерений
+
+// Мы хотим проверить, явялется ли массив из 3-х чисел убывающим
+ public static boolean isThreeArrDescending(int[] arrDesc3, int startDesc3) {
+        if(arrDesc3[startDesc3 + 2] <= arrDesc3[startDesc3 + 1]
+                && arrDesc3[startDesc3 + 2] <= arrDesc3[startDesc3]
+
+
+4) Представление намерений
+
+// Мы хотим понять, есть ли смысл удалять элементы в массиве из 3-х значений
+public static boolean isThisThreeOkay(int[] array, int startWith) {
+        if (array[startWith] >= array[startWith + 2] && array[startWith] <= array[startWith + 1])
+            return true;
+        else return false;
+    }
+
+
+5) Прояснение
+
+// Здесь мы определяем элемент массива для дальнейшего удаления
+public static void AimingForDestroy(int[][] arrayAim) {
+        for(int i=0; i<arrayAim.length; i++) {
+            for(int j=0; j<arrayAim[0].length; j++) {
+                if(arrayAim[i][j] >= 3) Destroy(arrayAim, i, j);
+            }
+        }
+
+
+6) Прояснение
+
+// Преобразуем двумерный массив из плюсов и точек в строковый массив
+ public static String[] intArrayToDotsNPlusesStringArray(int[][] array) {
+        String[] resultStrArray = new String[array.length];
+        String bufferStr = "";
+        for(int i=0; i< array.length; i++) {
+            for(int j=0; j<array[0].length; j++) {
+
+
+7) Предупреждения о последствиях
+
+// Значение переменной rand 17 рассчитано исходя из требований к равномерности распределения полученных результатов
+// Замена этого значения может ухудшить производительность!
+  public int hash1(String str1)
+    {
+        long res = 0;
+        int rand = 17;
+        long len = str1.length();
+
+
+8) Предупреждения о последствиях
+
+// Единица используется для корректного битового сдвига. Замена на другой параметр сломает алгоритм!
+public int setBit(int bitStorage, int bitIndex)
+    {
+        int res = bitStorage;
+        res |= (1<<bitIndex);
+        return res;
+    }
+
+
+9) Усиление
+
+// Использованные цифры 50, 1.5 и 16 описывают логику работу с динамическим массивом.
+// Их изменение не прервет работу алгоритма, но повлечет сильное влияние на результат.
+if(fullPercentage < 50)
+        {
+            int newSize = (int)(capacity / 1.5);
+            if(newSize < 16)
+                newSize = 16;
+
+            makeArray(newSize);
+        }
+
+
+10) Усиление
+
+// Заполнение массива null-ами обязательно, так как на этом строится вся логика работы словаря - значения попадают в массив
+// не по порядку. Нужны "пустые" ячейки.
+
+public NativeDictionary(int sz, Class clz)
+    {
+        clazz = clz;
+        size = sz;
+        slots = new String[size];
+        for(int i=0; i<size; i++) slots[i] = null;
+        values = (T[]) Array.newInstance(this.clazz, size);
+    }
+
+
+11) Комментарии TODO
+
+// Изначальные требования к программе предполагали статические неизменяемые параметры step и capacity
+// В следующей версии добавить возможность указания их при создании нового объекта
+public PowerSet()
+    {
+        step = 1;
+        capacity = 20000;
+        slots = new String[capacity];
+        indexes = new java.util.ArrayList<>();
+        java.util.Arrays.fill(slots, null);
+    }
+
+
+12) Комментарии TODO
+
+// В начальной реализации программы подразумевается всего 2 хэш-функции со статическим парметром rand
+// В следующей версии программы предусмотреть генерацию множества хэш-функций в зависимости от длины входного массива
+
+ public int hash2(String str1)
+    {
+        long res = 0;
+        int rand = 223;
+        long len = str1.length();
+
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
