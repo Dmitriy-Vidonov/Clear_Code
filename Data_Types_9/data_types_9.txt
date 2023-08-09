@@ -13,4 +13,4 @@
 11) переменная с ввероятностью переполнения дополнительно проверена условием: if(maxElement > Integer.MAX_VALUE || maxElement < Integer.MIN_VALUE) // переполнение
 12) в дополнение к предыдущему пункту введен assert с проверкой, аналогичной в п.11
 
-sdflksjfkljksdl
+sdflksjfkljksdlфывфывфвыфы
