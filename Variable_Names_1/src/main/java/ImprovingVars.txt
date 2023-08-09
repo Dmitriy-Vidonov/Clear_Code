@@ -2,7 +2,7 @@
 2) count - elementsCounter // счетчик элементов в массиве
 3) arrA1 - inputArray // массив входных данных
 4) indexA - inputArrayIndex // индекс для массива входных значений
-5) spisok_strok - stringList // список строк входных значений
+5) spisok_strok - stringList // список строк входных значений - плюс убрали некорректную латинницу как боженьки!
 6) diff - stringsDifference // разница строк
 7) s - encodedString // закодированная строка
 8) s1 - inputString1 // 1-я входная строка

@@ -11,3 +11,5 @@ final int OCTAL_NUMBER_SYSTEM, final int DECIMAL_NUMBER_SYSTEM
 10) в дополнение к пункту 9 - в том же коде исползована двойка с целью деления на 2. Вместо нее введена константа final int DIVISIBLE_NUMBER
 11) в коде исползован оператор switch case с перечислением от 1 до 5. Вместо чисел введены константы int final FIRST_CASE...FIFTH_CASE
 12) вместо числа 2, используемого для сравнения с длиной массива, введена константа int final ARRAY_LENGTH_COMPARING_NUMBER
+
+***тестовая замена файла для теста .gitignorehjkhkhkhjk
